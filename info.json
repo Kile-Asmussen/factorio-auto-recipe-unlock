@@ -1,9 +1,9 @@
 {
 	"name": "AutoUnlockedBy",
 	"version": "0.2.0",
-	"title": "Recipe Auto-unlocker",
+	"title": "Kashmira Qeel's Declarative Recipe Auto-Unlock Mod",
 	"author": "kashmira-qeel",
-	"description": "Automagically unlocks recipes based in a new prototype field similar to auto-barrelling of fluids and auto-recycling of items and recipes.",
+	"description": "Automatically unlocks recipes based in a new prototype field similar to auto-barrelling of fluids and auto-recycling of items and recipes.",
 	"factorio_version": "2.0",
 	"quality_required": true,
 	"rail_bridges_required": true,
