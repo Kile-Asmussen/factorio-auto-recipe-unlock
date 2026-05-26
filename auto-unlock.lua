@@ -116,7 +116,17 @@ end
 
 ---@param to_add { [TechnologyID]: RecipeID[] }
 local function add_unlocks(to_add)
-    for tech, recipes in pairs(to_add) do
+    for tech_name, recipes in pairs(to_add) do
+
+        --- @type TechnologyPrototype
+        local tech = data.raw.technology[tech_name]
+
+        if #recipes == 0 then
+            tech.enabled = true
+        else
+            tech.enabled = false
+        end
+
         for _, name in ipairs(recipes) do
             table.insert(tech.effects, {
                 type='unlock-recipe', recipe=name
@@ -209,10 +219,6 @@ local function auto_unlock(recipe_names)
     end
 
     local to_delete, to_add, to_enable = identify_unlocks(recipe_names)
-
-    for _, name in to_enable do
-        data.raw.recipe[name].enabled = true
-    end
     
     remove_unlocks(to_delete)
 

@@ -10,10 +10,9 @@ This mod introduces a "fake" property to [`RecipePrototype`]:
 
 This functions similarly to [`FluidPrototype.auto_barrel`] as well as [`ItemPrototype.auto_recycle`] and [``RecipePrototype.auto_recycle``] in that it causes automatic behavior during the `data-updates` stage.
 
-Simply add this mod as a dependency for your mod, add your recipe prototypes during the `data.lua` stage and on them, define a field `auto_unlocked_by` as either the name of a technology, or an array of names of technologies. You can also change existing recipes if you want to re-assign them.
+Add this mod as a dependency for your mod, add your recipe prototypes during the `data.lua` stage and on them, define a field `auto_unlocked_by` as either the name of a technology, or an array of names of technologies. You can also change existing recipes if you want to re-assign which technologies unlock them.
 
 **Note:** the set of recipe unlocks will be _overridden_, not simply added. If existing technologies unlock some recipe that has this field set, those unlocks will be _removed._ Use with caution.
-
 
 [`TechnologyID`]: https://lua-api.factorio.com/latest/types/TechnologyID.html
 [`RecipePrototype`]: https://lua-api.factorio.com/latest/prototypes/RecipePrototype.html
