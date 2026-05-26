@@ -1,0 +1,1 @@
+/home/qeela/factsandoreos/factorio-auto-recipe-unlock/.claude/skills/factorio-research/SKILL.md
