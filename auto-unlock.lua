@@ -128,6 +128,7 @@ local function add_unlocks(to_add)
         end
 
         for _, name in ipairs(recipes) do
+            tech.effects = tech.effects or {}
             table.insert(tech.effects, {
                 type='unlock-recipe', recipe=name
             })
@@ -212,7 +213,7 @@ local function identify_unlocks(recipe_names)
 end
 
 --- @param recipe_names RecipeID[]
-local function auto_unlock(recipe_names)
+local function auto_unlock_recipes(recipe_names)
     
     if type(recipe_names) == 'string' then
         recipe_names = { recipe_names }
@@ -226,5 +227,5 @@ local function auto_unlock(recipe_names)
 end
 
 return {
-    auto_unlock = auto_unlock,
+    auto_unlock_recipes = auto_unlock_recipes,
 }
