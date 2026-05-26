@@ -3,6 +3,6 @@
 zip AutoUnlockedBy.zip \
     info.json \
     thumbnail.png \
-    README.lua \
+    README.md \
     auto-unlock.lua \
     data-updates.lua
