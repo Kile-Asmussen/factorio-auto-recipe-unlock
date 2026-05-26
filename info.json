@@ -1,0 +1,21 @@
+{
+	"name": "AutoUnlockedBy",
+	"version": "0.2.0",
+	"title": "Recipe Auto-unlocker",
+	"author": "kashmira-qeel",
+	"description": "Automagically unlocks recipes based in a new prototype field similar to auto-barrelling of fluids and auto-recycling of items and recipes.",
+	"factorio_version": "2.0",
+	"quality_required": true,
+	"rail_bridges_required": true,
+	"spoiling_required": true,
+	"freezing_required": true,
+	"segmented_units_required": true,
+	"expansion_shaders_required": true,
+	"space_travel_required": true,
+	"dependencies" : [
+		"base",
+		"? space-age",
+		"? elevated-rails",
+		"? quality"
+	]
+}
